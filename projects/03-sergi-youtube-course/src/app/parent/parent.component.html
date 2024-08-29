@@ -1,0 +1,21 @@
+<!-- <h1>Contador:</h1>
+<p>{{ counter }}</p>
+
+<button (click)="increment()">Incrementar</button>
+<button (click)="decrement()">Decrementar</button> 
+
+<app-child
+  (messageEvent)="receiveMessage($event)"
+  (incrementFromChild)="increment()"
+  (decrementFromChild)="decrement()"
+/>
+
+<h5>El mensaje recibido del hijo es: {{ message }}</h5> -->
+
+<h1 appBrothersStyle>{{ name | customPipe }}</h1>
+
+<h2>Fecha de hoy {{ date | date : "short" }}</h2>
+
+<button (click)="greet()">Saludar</button>
+
+<button (click)="askForSon()">Preguntar por hijo</button>

@@ -1,0 +1,80 @@
+<!-- <h1>First Angular App</h1>
+<h2>{{ title }}</h2>
+<p>{{ 2 + 1 }}</p>
+
+<button [class.active]="isActive" [class.not-active]="!isActive">
+  Click Me
+</button>
+
+<button [style.background]="isActive ? 'red' : 'blue'">Click</button>
+
+<button (click)="onButtonClick()">Click</button>
+
+<input type="text" (keyup)="keyEnter($event)" />
+
+<input type="text" (keyup.enter)="keyupFiltering(user)" #user id="userInput" />
+
+<input
+  type="text"
+  [value]="userName"
+  #username
+  (keyup.enter)="updateUserName(username)"
+/>
+
+<input type="text" [(ngModel)]="userName" />
+
+<h3>{{ userName }}</h3> -->
+
+<!-- <h2 *ngIf="isLoggedIn; else message">{{ userName }}</h2>
+<h2 *ngIf="!isLoggedIn">User is not logged in</h2>
+
+<ng-template #message>
+  <h4>User is not logged in (Loaded using ng-template)</h4>
+</ng-template>
+
+@if (isLoggedIn) {
+  <h2>{{ userName }}</h2>
+} @else {
+  <h2>User is not logged in</h2>
+}
+
+<button (click)="countLoginAttemps()" *ngIf="loginCount < 4">Log In</button>
+
+<h4 *ngIf="loginCount > 3">Exceeded 3 login attemps, try again later</h4>
+
+<button (click)="countLoginAttemps()">Login Syntax</button>
+
+<ng-template #callToAction>
+  <button>Join now</button>
+</ng-template>
+
+<div [ngTemplateOutlet]="callToAction">
+  <h5>Sidebar</h5>
+</div>
+
+<p *ngFor="let user of users">{{ user.name }}</p>
+
+<ul>
+  @for (user of users; track user; let i = $index) {
+    <li>
+      {{ user.name }}
+      <button (click)="onDelete(i)">Delete</button>
+    </li>
+  } @empty {
+    <li>No users found</li>
+  }
+</ul>
+
+<button (click)="addNewUser()">Add new user</button>
+
+<h1
+  [ngStyle]="{
+    color: isLoggedIn ? 'green' : 'red',
+    textTransform: isLoggedIn ? 'uppercase' : 'lowercase',
+  }"
+>
+  Ng style directive
+</h1> -->
+
+<app-header></app-header>
+<app-navbar></app-navbar>
